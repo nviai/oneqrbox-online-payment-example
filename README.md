@@ -52,8 +52,12 @@ uvicorn main:app --host 0.0.0.0 --port 8000 --reload
 ```
 
 Server sẽ chạy tại địa chỉ: `http://localhost:8000`
+Mở ngrok tunnel để OneQR Box có thể gọi được API, tham khảo: ngrok.com
 
-Endpoint webhook: `http://localhost:8000/checkout/webhook`
+```bash
+ngrok http 8000
+```
+Endpoint webhook: `https://<id>.ngrok-free.app/checkout/webhook`
 
 
 ## Cấu hình trong OneQR Box
